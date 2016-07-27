@@ -1,0 +1,139 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Libre Baskerville', serif;*/
+	font-size: 14px;
+	color: #353535;
+}
+
+	body.index {
+		background-image: url(../images/illus-1.jpg);
+		background-position: center bottom 50px;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+	}
+
+/* main navigation styles*/
+nav .nav{
+	margin-right: 50px;
+	margin-top: 50px;
+}
+
+	nav .nav>li a{
+		color: #353535;
+		padding: 4px 15px;
+		border-radius: 20px;
+		font-weight: 300;
+	}
+
+	nav .nav-pills>li.active>a,
+	nav .nav-pills>li.active>a:hover,
+	nav .nav-pills>li.active>a:active,
+	nav .nav-pills>li.active>a:focus {
+		background-color: #f3f3f3;
+    	color: #f1635d;
+	}
+
+	nav .nav>li>a:focus,
+	nav .nav>li>a:hover {
+		background-color: #f3f3f3;
+	}
+
+/* Index page - Header content style */
+.index header {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.index header p a {
+	border-bottom: 1px dashed #55aefb;
+}
+
+	.index header p a:hover {
+		border-bottom: 0px solid #353535;
+		background-color: #ffca3a;
+		text-decoration: none;
+		color: #353535;
+	}
+
+	.index p a.start-bttn {
+		background-color: #ffca3a;
+    	color: #353535;
+    	padding: 5px 20px;
+    	text-decoration: none;
+    	border: none;
+    	border-radius: 30px;
+	}
+
+	.index p a.start-bttn:hover {
+		box-shadow: inset 0px 0px 5px rgba(0,0,0,.25);
+	}
+
+.index header h1, .index header p {
+	margin: 0 auto;
+	font-size: 3em;
+}
+
+.index header h1 {
+	margin-top: 50px;
+}
+
+.index header h1 i {
+	font-family: 'Libre Baskerville', serif;
+	/*background-color: #353535;
+	color: #ffca3a;*/
+	padding: 5px;
+	border-bottom: 2px solid #ffca3a;
+}
+
+.index header p {
+	font-size: 1.3em;
+	margin-top: 60px;
+	color: #909090;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+
+	body.index {
+		background-size: contain;
+		background-position: center bottom 0px;
+	}
+
+	.index header h1 {
+		line-height: 1.5em;
+		font-size: 2.3em;
+	}
+
+	.index header p {
+		padding: 15px;
+		font-size: 1.2em;
+		margin-top: 25px;
+	}
+
+	.index header p:last-child {
+		margin-bottom: 150px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
