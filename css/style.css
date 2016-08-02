@@ -3,6 +3,7 @@ body {
 	/*font-family: 'Libre Baskerville', serif;*/
 	font-size: 14px;
 	color: #353535;
+	min-height: 100vh;
 }
 
 	body.index {
@@ -162,30 +163,80 @@ nav .nav{
 }
 
 /* Main content pages */
-.main-content {
-	min-height: 100vh;
+.intro-content {
 	text-align: center;
+	background-color: black;
+	color: white;
+	min-height: 100vh;
 }
 
-	.main-content h1 {
+.intro-content .heading-bar {
+	top: 75px;
+	position: relative;
+	height: 150px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffca3a+0,ffca3a+25,ffffff+25,ffffff+100 */
+	background: #ffca3a; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffca3a 0%, #ffca3a 40%, #000000 40%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #ffca3a 0%,#ffca3a 40%,#000000 40%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #ffca3a 0%,#ffca3a 40%,#000000 40%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffca3a', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+	left: -15px;
+}
+
+	.heading-bar h1{
 		font-size: 6em;
-		font-weight: 700;
-		padding-bottom: 10px;
-		border-bottom: 3px solid #000;
-		display: inline;
+		font-weight: 800;
 		text-transform: uppercase;
-		color: black;
-		margin-top: 100px;
-		margin-bottom: 100px;
+		position: relative;
+		top: -25px;
+		text-align: center;
+		font-family: 'Kanit', sans-serif;
+		color: #fff;
+		text-shadow: 25px 15px 0 rgba(255, 255, 255, 0.15);
 	}
 
-	.main-content p {
-		font-size: 1.5em;
+	/*.heading-bar h1{
+		font-size: 6em;
+		font-weight: 400;
+		text-transform: uppercase;
+		position: relative;
+		top: -25px;
+		text-align: center;
+		font-family: 'Fascinate Inline', cursive;
+		color: #000;
+	}*/
+
+	.heading-bar hr {
+		border-bottom: 3px solid #ffca3a;
+		width: 225px;
+		text-align: center;
+		top: -20px;
+		position: relative;
 	}
 
+.content-main {
+	position: relative;
+	font-size: 1.3em;
+	top: 110px;
+	line-height: 1.5em;
+}
 
+.principles-items {
+	position: relative;
+	top: 90px;
+}
 
+.principles-items ol li {
+	margin-bottom: 10px
+}
 
+	.principles-items ol li a{
+		background: #fff;
+		box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+		margin-right: 15px;
+		line-height: 40px;
+		display: block;
+	}
 
 
 
