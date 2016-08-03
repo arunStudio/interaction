@@ -1,0 +1,118 @@
+// Fonts variables
+$ff-sans: 'Raleway', sans-serif;
+$ff-serif: 'Crimson Text', serif;
+
+// Color Variables - Greyscale colors ---  colors from dark to light
+$black :#000000;
+$dark : #242424; //--- the color for default text in content
+$ash: #555555;
+$medium-dark: #9e9e9e;
+$light-grey: #f1f1f1; //--- the color for background to show quotes of special section etc.
+$white: #ffffff;
+
+// Color variables - Colors here
+$primary-color: #ffcc05 ; //---yellow color
+$secondary-color: #eb2026; //---red color
+$gama-color: #f1635c; //---light red
+$anchor-hover: #fff1bb; //---light yellow
+
+// Transitions variables
+$hover-ease: all .25s ease-in;
+
+
+// the styles start here -------
+body {
+	font-family: $ff-serif;
+	font-size: 16px;
+	color: $dark;
+	min-height: 100vh;
+	a {
+		color: $ash;
+	    text-decoration: none;
+	    background: $anchor-hover;
+	    padding: 0 5px;
+	    transition: $hover-ease;
+	    &:hover {
+	    	transition: $hover-ease;
+	    }
+	}
+	&.index {
+		background: url(../images/illus-1.jpg) no-repeat center bottom 20px;
+		height: 750px;
+		min-height: 100vh;
+		header {
+			text-align: center;
+			margin-top: 35px;
+			h1 {
+				margin: 30px auto 15px;
+				font-family: $ff-sans;
+				font-weight: 200;
+				i {
+					font-family: $ff-serif;
+					padding: 5px;
+					border-bottom: 2px solid $secondary-color;
+				}
+			}
+			p {
+				font-size: 1.2em;
+				margin: 40px auto 0 auto;
+				color: $ash;
+				font-weight: 300;
+				a:hover {
+					border-bottom: 0px solid $ash;
+					background-color: $primary-color;
+					text-decoration: none;
+					color: $dark;
+					transition: $hover-ease;
+				}
+				a.start-bttn {
+					background-color: $primary-color;
+			    	color: $dark;
+			    	padding: 7px 25px;
+			    	text-decoration: none;
+			    	border: none;
+			    	border-radius: 5px;
+			    	top: 1px;
+			    	position: relative;
+			    	transition: $hover-ease;
+			    	&:hover {
+			    		box-shadow: 0px 4px 10px -3px rgba(0,0,0,.25);
+			    		top: 0px;
+			    		transition: $hover-ease;
+			    	}
+				}
+			}
+		}
+	}
+}
+
+ // main navigation styles - Home page
+ nav .nav {
+	margin-right: 50px;
+	margin-top: 35px;
+	> li {
+		a {
+			padding: 3px 17px;
+			border-radius: 20px;
+			font-family: $ff-sans;
+			font-weight: 500;
+			font-size: 13px;
+			background-color: $white;
+			color: $medium-dark;
+			transition: $hover-ease;
+			&:focus, &:hover{
+				background-color: $light-grey;
+				color: $ash;
+			}
+		}
+		&.active > a {
+			background-color: $light-grey;
+			color: $secondary-color;
+			&:hover, &:active, &:focus {
+				background-color: $light-grey;
+				color: $gama-color;
+			}
+
+		}
+	}
+}
