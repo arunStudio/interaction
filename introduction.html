@@ -11,12 +11,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- User - custom stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-phone.css">
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-phone.css"> -->
+
+    <!-- Stylesheet for sass directory  -->
+    <link rel="stylesheet" href="sass/style.css">
 
     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Kanit:800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,400" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,86 +28,90 @@
     <![endif]-->
   </head>
   <body class="main intro">
-  	<!-- <a href="#" class="hamburger"></a>
-  	<a href="#" class="more"></a> -->
-	<div class="container-fluid intro-content">
+  	
+	<div class="container">
 		<div id="introduction" class="row content-row">
 			<div class="col-md-12">
-				<div class="heading-bar">
-					<h1 class="col-md-offset-1 col-md-10">An<br>Introduction</h1>
-					<hr>
-				</div>
-			</div>
-			<div class="col-md-offset-2 col-md-8 content-main">
-				<p>The following principles are fundamental to the design and implementation of effective interfaces, whether for traditional GUI environments, the web, mobile devices, wearables, or Internet-connected smart devices.</p>
-					
-				<p>Effective interfaces are visually apparent and forgiving, instilling in their users a sense of control. Users quickly see the breadth of their options, grasp how to achieve their goals, and can settle down to do their work. Effective interfaces do not concern the user with the inner workings of the system. Work is carefully and continuously saved, with full option for the user to undo any activity at any time. Effective applications and services perform a maximum of work, while requiring a minimum of information from users.</p>
+				<h1 class="col-md-10 col-md-offset-1">An Introduction to <br /> Interaction Design</h1>
 
-				<p>Because an application or service appears on the web or mobile device, the principles do not change. If anything, applying these principles—all these principles—becomes even more important.</p>
-			</div>
-			<div class="col-md-10 col-md-offset-1 principles-items">
-				<ol class="list-unstyled">
-					<li class="col-md-3">
-						<a href="#">Introduction</a>
-					</li>
-			  		<li class="col-md-3">
-			  			<a id="aesthetics" href="#">Aesthetics</a>
-			  		</li>
-					<li class="col-md-3">
-						<a href="#">Anticipation</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Autonomy</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Color</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Consistency</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Defaults</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Discoverability</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Efficiency of the User</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Explorable Interfaces</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Fitts's Law</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Human-Interface Objects</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Latency Reduction</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Learnability</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Metaphors</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Protect Users' Work</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Readability</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Simplicity</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">State: Track it</a>
-					</li>
-					<li class="col-md-3">
-						<a href="#">Visible Interfaces</a>
-					</li>
-			  	</ol>
+				<p class="col-md-10 col-md-offset-1">Interaction Design (IxD) defines the structure and behavior of interactive systems. Interaction Designers strive to create meaningful relationships between people and the products and services that they use, from computers to mobile devices to appliances and beyond.</p>
+
+				<div class="col-md-offset-2 col-md-4">
+					<h2><i>What is <br>"Interaction Design? "</i></h2>
+					<p>Interaction Design is a multi-disciplinary design discipline that uses human understanding to manage the growth of complexity due to but not limited in scope to technology. Interaction design is heavily focused on satisfying the needs and desires of the people who will use the product.</p>
+				</div>
+				<div class="col-md-offset-2 col-md-4">
+					<h2><i>What does <br />"Interaction Designer do? "</i></h2>
+					<p>The Interaction Designer designs the behaviors of systems that lead people through positive experiences. Interaction designers, focus on digital products and interactive software design. The Interaction Designer designs the behaviors of systems that lead people through positive experiences.</p>
+				</div>
+
+				<p class="col-md-10 col-md-offset-1">The following principles are fundamental to the design and implementation of effective interfaces, whether for traditional GUI environments, the web, mobile devices, wearables, or Internet-connected smart devices. Because an application or service appears on the web or mobile device, the principles do not change. If anything, applying these principles—all these principles—becomes even more important.</p>
+
+				<!-- <p class="col-md-10 col-md-offset-1">Effective interfaces are visually apparent and forgiving, instilling in their users a sense of control. Users quickly see the breadth of their options, grasp how to achieve their goals, and can settle down to do their work. Effective interfaces do not concern the user with the inner workings of the system. Work is carefully and continuously saved, with full option for the user to undo any activity at any time. Effective applications and services perform a maximum of work, while requiring a minimum of information from users.</p> -->
+
+				<!-- <iframe id="objVideo" class="col5 colR" src="https://player.vimeo.com/video/119472401?portrait=0&amp;title=0&amp;byline=0&amp;color=ffffff" width="830" height="467" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> -->
+
+				<div class="principles-list">
+					<ol class="list-unstyled">
+				  		<li class="col-md-3">
+				  			<a id="aesthetics" href="#">Aesthetics</a>
+				  		</li>
+						<li class="col-md-3">
+							<a href="#">Anticipation</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Autonomy</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Color</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Consistency</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Defaults</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Discoverability</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Efficiency of the User</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Explorable Interfaces</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Fitts's Law</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Human-Interface Objects</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Latency Reduction</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Learnability</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Metaphors</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Protect Users' Work</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Readability</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Simplicity</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">State: Track it</a>
+						</li>
+						<li class="col-md-3">
+							<a href="#">Visible Interfaces</a>
+						</li>
+				  	</ol>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -124,24 +130,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
