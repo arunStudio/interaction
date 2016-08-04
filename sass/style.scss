@@ -7,7 +7,7 @@ $black :#000000;
 $dark : #242424; //--- the color for default text in content
 $ash: #555555;
 $medium-dark: #8c8c8c;
-$light-grey: #f9f9f9; //--- the color for background to show quotes of special section etc.
+$light-grey: #efefef; //--- the color for background to show quotes of special section etc.
 $white: #ffffff;
 
 // Color variables - Colors here
@@ -74,7 +74,7 @@ body {
 	}
 	h2 {
 		padding: 5px;
-		border-bottom: 2px solid $secondary-color;
+		border-bottom: 3px solid $secondary-color;
 	}
 	p {
 		color: $ash;
@@ -152,6 +152,53 @@ body {
 				color: $gama-color;
 			}
 
+		}
+	}
+}
+
+// back to top - css
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+// Intropage - Principles list styles
+.intro {
+	a.spaned {
+		font-size: 12px;
+		font-family: $ff-sans;
+		display: block;
+		text-align: right;
+		position: relative;
+		top: -60px;
+		padding: 5px 20px 5px 0 ;
+		color: $secondary-color;
+		&:hover {
+			opacity: .5;
+		}
+	}
+	#principles-list {
+		margin-bottom: 50px;
+		li {
+		border-bottom: 1px dotted $medium-dark;
+		padding: 0;
+			a {
+				text-decoration: none;
+				font-size: 1.3em;
+				line-height: 50px;
+				display: block;
+				margin:0;
+				padding:0 15px;
+				&:hover {
+					background-color: $secondary-color;
+					color: white;
+				}
+			}
 		}
 	}
 }

@@ -17,6 +17,12 @@
     <!-- Stylesheet for sass directory  -->
     <link rel="stylesheet" href="sass/style.css">
 
+    <!-- back to top css -->
+    <link rel="stylesheet" type="text/css" href="css/to-top.css">
+
+    <!-- Sticky nav css -->
+    <link rel="stylesheet" type="text/css" href="css/sticky-nav.css">
+
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,400" rel="stylesheet">
 
@@ -28,86 +34,109 @@
     <![endif]-->
   </head>
   <body class="main intro">
-  	
-	<div class="container">
+  	<!-- Sticky navigation -->
+  	<nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			Menu
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul class="list-unstyled">
+			<li><a href="#0" class="active"><span>Home</span></a></li>
+			<li><a href="#0"><span>Portfolio</span></a></li>
+			<li><a href="#0"><span>Services</span></a></li>
+			<li><a href="#0"><span>Store</span></a></li>
+			<li><a href="#0"><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+
+  	<div class="container">
 		<div id="introduction" class="row content-row">
 			<div class="col-md-12">
 				<h1 class="col-md-10 col-md-offset-1">An Introduction to <br /> Interaction Design</h1>
 
+				<div class="col-md-offset-1 col-md-10">
+					<a href="#principles-header" class="spaned">skip intro</a>
+				</div>
+
 				<p class="col-md-10 col-md-offset-1">Interaction Design (IxD) defines the structure and behavior of interactive systems. Interaction Designers strive to create meaningful relationships between people and the products and services that they use, from computers to mobile devices to appliances and beyond.</p>
 
-				<div class="col-md-offset-2 col-md-4">
+				<div class="col-md-offset-1 col-md-4">
 					<h2><i>What is <br>"Interaction Design? "</i></h2>
 					<p>Interaction Design is a multi-disciplinary design discipline that uses human understanding to manage the growth of complexity due to but not limited in scope to technology. Interaction design is heavily focused on satisfying the needs and desires of the people who will use the product.</p>
 				</div>
-				<div class="col-md-offset-2 col-md-4">
+				<div class="col-md-offset-1 col-md-4">
 					<h2><i>What does <br />"Interaction Designer do? "</i></h2>
 					<p>The Interaction Designer designs the behaviors of systems that lead people through positive experiences. Interaction designers, focus on digital products and interactive software design. The Interaction Designer designs the behaviors of systems that lead people through positive experiences.</p>
 				</div>
-
-				<p class="col-md-10 col-md-offset-1">The following principles are fundamental to the design and implementation of effective interfaces, whether for traditional GUI environments, the web, mobile devices, wearables, or Internet-connected smart devices. Because an application or service appears on the web or mobile device, the principles do not change. If anything, applying these principles—all these principles—becomes even more important.</p>
 
 				<!-- <p class="col-md-10 col-md-offset-1">Effective interfaces are visually apparent and forgiving, instilling in their users a sense of control. Users quickly see the breadth of their options, grasp how to achieve their goals, and can settle down to do their work. Effective interfaces do not concern the user with the inner workings of the system. Work is carefully and continuously saved, with full option for the user to undo any activity at any time. Effective applications and services perform a maximum of work, while requiring a minimum of information from users.</p> -->
 
 				<!-- <iframe id="objVideo" class="col5 colR" src="https://player.vimeo.com/video/119472401?portrait=0&amp;title=0&amp;byline=0&amp;color=ffffff" width="830" height="467" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> -->
 
-				<div class="principles-list">
+				<h1 id="principles-header" class="col-md-10 col-md-offset-1">Principles of IxD</h1>
+
+				<p class="col-md-10 col-md-offset-1">The following principles are fundamental to the design and implementation of effective interfaces, whether for traditional GUI environments, the web, mobile devices, wearables, or Internet-connected smart devices. Because an application or service appears on the web or mobile device, the principles do not change. If anything, applying these principles—all these principles—becomes even more important.</p>
+
+				<div id="principles-list" class="col-md-12">
 					<ol class="list-unstyled">
-				  		<li class="col-md-3">
+				  		<li class="col-md-4 col-md-offset-1">
 				  			<a id="aesthetics" href="#">Aesthetics</a>
 				  		</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Anticipation</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Autonomy</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Color</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Consistency</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Defaults</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Discoverability</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Efficiency of the User</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Explorable Interfaces</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Fitts's Law</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Human-Interface Objects</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Latency Reduction</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Learnability</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Metaphors</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Protect Users' Work</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Readability</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Simplicity</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">State: Track it</a>
 						</li>
-						<li class="col-md-3">
+						<li class="col-md-4 col-md-offset-1">
 							<a href="#">Visible Interfaces</a>
 						</li>
 				  	</ol>
@@ -116,17 +145,17 @@
 		</div>
 	</div>
 
+	<!-- back to top icon -->
+  	<a href="#0" class="cd-top">Top</a>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-    	$(document).ready(function(){
-    		$('#aesthetics').on('click', function(){
-    			$('.content-row').load('principles-pages/aesthetics.html')
-    		});
-    	});
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Sticky Nav js -->
+    <script type="text/javascript" src="js/sticky-nav.js"></script>
   </body>
 </html>

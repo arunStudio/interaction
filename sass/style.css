@@ -14,7 +14,7 @@ body {
       color: #eb2026;
       transition: all 0.15s ease-in; }
   body blockquote {
-    background-color: #f9f9f9;
+    background-color: #efefef;
     border-left-color: #eb2026;
     font-size: 1.2em;
     font-weight: 100;
@@ -41,7 +41,7 @@ body {
     line-height: 1.4em; }
   body h2 {
     padding: 5px;
-    border-bottom: 2px solid #eb2026; }
+    border-bottom: 3px solid #eb2026; }
   body p {
     color: #555555;
     font-weight: 300;
@@ -95,14 +95,50 @@ nav .nav {
     color: #8c8c8c;
     transition: all 0.15s ease-in; }
     nav .nav > li a:focus, nav .nav > li a:hover {
-      background-color: #f9f9f9;
+      background-color: #efefef;
       color: #555555; }
   nav .nav > li.active > a {
-    background-color: #f9f9f9;
+    background-color: #efefef;
     color: #eb2026; }
     nav .nav > li.active > a:hover, nav .nav > li.active > a:active, nav .nav > li.active > a:focus {
-      background-color: #f9f9f9;
+      background-color: #efefef;
       color: #f1635c; }
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5; }
+
+.intro a.spaned {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  text-align: right;
+  position: relative;
+  top: -60px;
+  padding: 5px 20px 5px 0;
+  color: #eb2026; }
+  .intro a.spaned:hover {
+    opacity: .5; }
+.intro #principles-list {
+  margin-bottom: 50px; }
+  .intro #principles-list li {
+    border-bottom: 1px dotted #8c8c8c;
+    padding: 0; }
+    .intro #principles-list li a {
+      text-decoration: none;
+      font-size: 1.3em;
+      line-height: 50px;
+      display: block;
+      margin: 0;
+      padding: 0 15px; }
+      .intro #principles-list li a:hover {
+        background-color: #eb2026;
+        color: white; }
 
 @media only screen and (max-width: 768px) {
   body h1 {
