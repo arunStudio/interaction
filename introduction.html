@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/sticky-nav.css">
 
     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:100,300,400,500" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,32 +34,33 @@
     <![endif]-->
   </head>
   <body class="main intro">
-  	<!-- Sticky navigation -->
-  	<nav class="cd-stretchy-nav">
-		<a class="cd-nav-trigger" href="#0">
-			Menu
-			<span aria-hidden="true"></span>
-		</a>
-
-		<ul class="list-unstyled">
-			<li><a href="#0" class="active"><span>Home</span></a></li>
-			<li><a href="#0"><span>Portfolio</span></a></li>
-			<li><a href="#0"><span>Services</span></a></li>
-			<li><a href="#0"><span>Store</span></a></li>
-			<li><a href="#0"><span>Contact</span></a></li>
-		</ul>
-
-		<span aria-hidden="true" class="stretchy-nav-bg"></span>
-	</nav>
 
   	<div class="container">
 		<div id="introduction" class="row content-row">
 			<div class="col-md-12">
+				<header>
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Main Navigation here
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Gestalt</a></li>
+							<li><a href="#">Dieter Rams</a></li>
+							<li><a href="#">Glossary</a></li>
+							<li><a href="#">Accessibility</a></li>
+							<li><a href="#">Psychology</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</header>
+				<!-- Header ends here  -->
 				<h1 class="col-md-10 col-md-offset-1">An Introduction to <br /> Interaction Design</h1>
 
-				<div class="col-md-offset-1 col-md-10">
-					<a href="#principles-header" class="spaned">skip intro</a>
-				</div>
+				<a href="#principles-header" class="col-md-offset-1 col-md-10 spaned">skip intro</a>
 
 				<p class="col-md-10 col-md-offset-1">Interaction Design (IxD) defines the structure and behavior of interactive systems. Interaction Designers strive to create meaningful relationships between people and the products and services that they use, from computers to mobile devices to appliances and beyond.</p>
 

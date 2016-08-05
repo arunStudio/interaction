@@ -29,6 +29,9 @@ body {
 	font-size: 16px;
 	color: $dark;
 	min-height: 90vh;
+	header {
+		margin-bottom: 60px;
+	}
 	a {
 		color: $black;
 	    text-decoration: underline;
@@ -89,6 +92,7 @@ body {
 		header {
 			text-align: center;
 			margin-top: 35px;
+			margin-bottom: 0;
 			h1 {
 				margin: 30px auto 15px;
 				font-size: 3em;
@@ -157,14 +161,16 @@ body {
 }
 
 // back to top - css
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
+.cd-top{
+	&.cd-is-visible {
+		/* the button becomes visible */
+		visibility: visible;
+		opacity: 1;
+	}
+	&.cd-fade-out {
+		/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+		opacity: .5;
+	}
 }
 
 // Intropage - Principles list styles
@@ -175,7 +181,7 @@ body {
 		display: block;
 		text-align: right;
 		position: relative;
-		top: -60px;
+		top: -70px;
 		padding: 5px 20px 5px 0 ;
 		color: $secondary-color;
 		&:hover {
@@ -196,16 +202,59 @@ body {
 				padding:0 15px;
 				&:hover {
 					background-color: $secondary-color;
-					color: white;
+					color: $white;
 				}
 			}
 		}
 	}
 }
 
+// Dropdown BS
+header {
+	.dropdown {
+		font-family: $ff-sans;
+		position: fixed;
+		z-index: 99999;
+		top: 0;
+		.btn {
+			border-radius: 0;
+			font-weight: 500;
+		    font-size: 13px;
+		    text-decoration: none;
+		    background-color: $primary-color;
+		    color: $black;
+		    border: none;
+			padding: 10px 20px;
+			width: 220px;
+			text-align: left;
+		}
+		&.open .btn.btn-default.dropdown-toggle, .btn-default:active:focus {
+			background-color: $secondary-color;
+			color: $white;
+			outline: 0;
+		}
+		.dropdown-menu {
+			border-radius: 0;
+			width: 220px;
+			background-color: $primary-color;
+			border: 0;
+			box-shadow: none;
+			> li > a {
+				font-weight: 500;
+				padding: 7px 20px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
 // Media queries for tablet and below
 @media only screen and (max-width: 768px) {
 	body {
+		header {
+			margin-bottom: 100px;
+		}
 		h1 {
 			font-size: 3em;
 		}

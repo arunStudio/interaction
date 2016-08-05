@@ -3,6 +3,8 @@ body {
   font-size: 16px;
   color: #242424;
   min-height: 90vh; }
+  body header {
+    margin-bottom: 60px; }
   body a {
     color: #000000;
     text-decoration: underline;
@@ -53,7 +55,8 @@ body {
     min-height: 90vh; }
     body.index header {
       text-align: center;
-      margin-top: 35px; }
+      margin-top: 35px;
+      margin-bottom: 0; }
       body.index header h1 {
         margin: 30px auto 15px;
         font-size: 3em;
@@ -108,7 +111,6 @@ nav .nav {
   /* the button becomes visible */
   visibility: visible;
   opacity: 1; }
-
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5; }
@@ -119,7 +121,7 @@ nav .nav {
   display: block;
   text-align: right;
   position: relative;
-  top: -60px;
+  top: -70px;
   padding: 5px 20px 5px 0;
   color: #eb2026; }
   .intro a.spaned:hover {
@@ -138,9 +140,42 @@ nav .nav {
       padding: 0 15px; }
       .intro #principles-list li a:hover {
         background-color: #eb2026;
-        color: white; }
+        color: #ffffff; }
+
+header .dropdown {
+  font-family: "Raleway", sans-serif;
+  position: fixed;
+  z-index: 99999;
+  top: 0; }
+  header .dropdown .btn {
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #ffcc05;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    width: 220px;
+    text-align: left; }
+  header .dropdown.open .btn.btn-default.dropdown-toggle, header .dropdown .btn-default:active:focus {
+    background-color: #eb2026;
+    color: #ffffff;
+    outline: 0; }
+  header .dropdown .dropdown-menu {
+    border-radius: 0;
+    width: 220px;
+    background-color: #ffcc05;
+    border: 0;
+    box-shadow: none; }
+    header .dropdown .dropdown-menu > li > a {
+      font-weight: 500;
+      padding: 7px 20px;
+      text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
+  body header {
+    margin-bottom: 100px; }
   body h1 {
     font-size: 3em; } }
 
