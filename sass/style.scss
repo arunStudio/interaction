@@ -61,6 +61,12 @@ body {
 	    	font-family: $ff-sans;
 	    	color: $secondary-color;
 	    }
+	    h5 {
+			color: $ash !important;
+			font-size: 1em !important;
+		    font-weight: 500;
+		    line-height: 26px;
+		}
 	    p {
 	    	font-size: 1em;
 	    	color: $black;
@@ -252,6 +258,16 @@ body {
 		    float: left;
 		    margin-left: -15px;
 		    margin-top: 8px;
+		}
+	}
+	h5 {
+		font-size: 1.2em;
+		font-family: $ff-sans;
+		color: $gama-color;
+		span {
+			color: $primary-color;
+			margin-right: 10px;
+			font-size: 16px;
 		}
 	}
 }

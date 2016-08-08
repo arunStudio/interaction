@@ -29,6 +29,11 @@ body {
     body blockquote h3 {
       font-family: "Raleway", sans-serif;
       color: #eb2026; }
+    body blockquote h5 {
+      color: #555555 !important;
+      font-size: 1em !important;
+      font-weight: 500;
+      line-height: 26px; }
     body blockquote p {
       font-size: 1em;
       color: #000000;
@@ -177,6 +182,14 @@ nav .nav {
     float: left;
     margin-left: -15px;
     margin-top: 8px; }
+.principles-pages h5 {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  color: #f1635c; }
+  .principles-pages h5 span {
+    color: #ffcc05;
+    margin-right: 10px;
+    font-size: 16px; }
 
 .main-page-nav-open {
   position: fixed;
