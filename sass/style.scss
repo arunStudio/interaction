@@ -373,6 +373,17 @@ body {
 	}
 }
 
+.grey-area:before {
+	position: absolute;
+	z-index: -1;
+	width: 80%;
+	left: -50px;
+	height: 100%;
+	background-color: #f8f8f8;
+	content: "";
+	top: -20px;
+}
+
 // Media queries for tablet and below
 @media only screen and (max-width: 768px) {
 	body {
