@@ -173,7 +173,8 @@ nav .nav {
 
 .principles-pages h4 {
   margin-bottom: 15px;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  font-weight: 400; }
   .principles-pages h4:before {
     content: "";
     width: 5px;
@@ -182,6 +183,9 @@ nav .nav {
     float: left;
     margin-left: -15px;
     margin-top: 8px; }
+  .principles-pages h4 span.principles-tag {
+    color: #f1635c;
+    font-style: italic; }
 .principles-pages h5 {
   font-size: 1.2em;
   font-family: "Raleway", sans-serif;
