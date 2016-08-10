@@ -252,13 +252,20 @@ body {
 		font-size: 1.4em;
 		font-weight: 400;
 		&:before{
-			content: "";
+			content: "\e239";
 			width: 5px;
 		    height: 15px;
-		    background: $secondary-color;
+		    // background: $secondary-color;
 		    float: left;
-		    margin-left: -15px;
-		    margin-top: 8px;
+		    margin-left: -30px;
+		    margin-top: 4px;
+		    font-family: 'Glyphicons Halflings';
+		    font-style: normal;
+		    font-weight: 400;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    font-size: 19px;
+		    color: $primary-color;
 		}
 		span.principles-tag {
 			color: $gama-color;

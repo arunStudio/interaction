@@ -176,13 +176,19 @@ nav .nav {
   font-size: 1.4em;
   font-weight: 400; }
   .principles-pages h4:before {
-    content: "";
+    content: "\e239";
     width: 5px;
     height: 15px;
-    background: #eb2026;
     float: left;
-    margin-left: -15px;
-    margin-top: 8px; }
+    margin-left: -30px;
+    margin-top: 4px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+    color: #ffcc05; }
   .principles-pages h4 span.principles-tag {
     color: #f1635c;
     font-style: italic; }
